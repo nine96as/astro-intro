@@ -1,11 +1,18 @@
 ---
-const platforms = ['github', 'linkedin']
-const usernames = ['nine96as', 'nine96']
+import Social from './Social.astro'
 ---
 
 <footer>
   <p>
-    <a href={`https://www.${platforms[0]}.com/${usernames[0]}`}>GitHub</a>
-    <a href={`https://www.${platforms[1]}.com/in/${usernames[1]}/`}>LinkedIn</a>
+    <Social platform='github' username='nine96as' />
+    <Social platform='twitter' username='nine96as' />
   </p>
 </footer>
+
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
