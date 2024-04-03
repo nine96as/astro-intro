@@ -1,6 +1,6 @@
 import rss, { pagesGlobToRssItems } from '@astrojs/rss'
 
-export async function GET(context) {
+const GET = async (context) => {
   return rss({
     title: 'Asto Learner | Blog',
     description: 'My journey learning Astro',
@@ -9,3 +9,5 @@ export async function GET(context) {
     customData: `<language>en-us</language>`,
   })
 }
+
+export default GET
