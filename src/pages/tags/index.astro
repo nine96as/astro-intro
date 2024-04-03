@@ -1,7 +1,9 @@
 ---
+import { getCollection } from 'astro:content'
 import Base from '../../layouts/Base.astro'
-const posts = await Astro.glob('../posts/*.md')
-const tags = [...new Set(posts.map((p) => p.frontmatter.tags).flat())]
+
+const posts = await getCollection('posts')
+const tags = [...new Set(posts.map((p) => p.data.tags).flat())]
 const title = 'Tag Index'
 ---
 
