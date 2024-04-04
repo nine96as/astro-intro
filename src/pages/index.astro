@@ -4,7 +4,7 @@ import Base from '../layouts/Base.astro'
 const title = 'Home Page'
 ---
 
-<Base title={title}
-  ><h2>My awesome blog subtitle</h2>
+<Base title={title}>
+  <h2>My awesome blog subtitle</h2>
   <Greeting client:load messages={['Hej', 'Hallo', 'Hola', 'Habari']} />
 </Base>
