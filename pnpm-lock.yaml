@@ -11,6 +11,9 @@ dependencies:
   '@astrojs/rss':
     specifier: ^4.0.5
     version: 4.0.5
+  '@iconify-json/ph':
+    specifier: ^1.1.12
+    version: 1.1.12
   astro:
     specifier: ^4.5.15
     version: 4.5.15
@@ -775,6 +778,12 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@iconify-json/ph@1.1.12:
+    resolution: {integrity: sha512-m+rXTW084YaQQHT+F8TxdkCoAh+i/5MWRoSuPmxCWPlxwMAaLT/QfyVsbEiV95HM5806U/jKpBV6F1b7Pmr3Vg==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: false
 
   /@iconify/tools@3.0.7:
     resolution: {integrity: sha512-DxfhFLMnooS34dHelpGUnnYrxLZHs0czC1CgrBhAbuL8ddVzBb2VEQm8kh9qGh7A34qeXAB5iSHH3A72rAaFrg==}
