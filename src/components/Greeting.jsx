@@ -8,7 +8,9 @@ const Greeting = ({ messages }) => {
 
   return (
     <div>
-      <h3>{greeting}! Thank you for visiting!</h3>
+      <p>
+        <strong>{greeting}</strong>! <em>Thank you for visiting</em> 🫡
+      </p>
       <button onClick={() => setGreeting(randomMessage())}>New Greeting</button>
     </div>
   )
